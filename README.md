@@ -1,6 +1,6 @@
-# Telegram fortune bot
+Telegram fortune bot
 This is a simple telegram robot that used python telegram bot wrapper to create a simple robot in telegram to send you the Linux fortune command output.
-#Dependencies
+Dependencies
 I recommend that you try to install all of the requirement inside a virtualenv 
 First of all you should do :
 1- Install the virtualenv
