@@ -1,8 +1,11 @@
 import telegram as tg
 import time
-import os.path,os.stat
+import os
+
 #from subprocess import call,Popen
 import subprocess
+
+token = "<TOKEN>"
 update_id_fname = "update_id.frt"
 update_id = -1
 if os.path.isfile(update_id_fname) and os.stat(update_id_fname).st_size !=0:
@@ -27,7 +30,7 @@ else:
 #	update_id = 0
 	
 print "Strat the fortune Bot"
-bot = tg.Bot(token='<YOUR TOKEN>')
+bot = tg.Bot(token=token)
 print "Try to run getMe"
 print "I am "+bot.getMe().first_name
 print "Try to run fortune"
